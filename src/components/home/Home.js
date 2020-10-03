@@ -17,51 +17,51 @@ function Home() {
       <div className="home__row">
         <Product
           id="123456"
-          title="The learn Startup: How you like that"
+          title="Apple iPhone XR, 64GB, White - Fully Unlocked (Renewed)"
           price={11.96}
           rating={5}
-          image="https://images-na.ssl-images-amazon.com/images/I/51Zymoq7UnL._SX325_801,204,203,200_.jpg"
+          image="https://m.media-amazon.com/images/I/61U15mbXKNL._AC_UY218_.jpg"
         />
         <Product
           id="123456"
-          title="The learn Startup: How you like that"
-          price={11.96}
+          title="Apple iPhone 11 Pro (64GB, Space Gray) [Locked] + Carrier Subscription"
+          price={284.10}
           rating={5}
-          image="https://images-na.ssl-images-amazon.com/images/I/51Zymoq7UnL._SX325_801,204,203,200_.jpg"
-        />
-      </div>
-
-      <div className="home__row">
-        <Product
-          id="123456"
-          title="The learn Startup: How you like that"
-          price={11.96}
-          rating={5}
-          image="https://images-na.ssl-images-amazon.com/images/I/51Zymoq7UnL._SX325_801,204,203,200_.jpg"
-        />
-        <Product
-          id="123456"
-          title="The learn Startup: How you like that"
-          price={11.96}
-          rating={5}
-          image="https://images-na.ssl-images-amazon.com/images/I/51Zymoq7UnL._SX325_801,204,203,200_.jpg"
-        />
-        <Product
-          id="123456"
-          title="The learn Startup: How you like that"
-          price={11.96}
-          rating={5}
-          image="https://images-na.ssl-images-amazon.com/images/I/51Zymoq7UnL._SX325_801,204,203,200_.jpg"
+          image="https://cdn.tgdd.vn/Products/Images/42/153856/iphone-11-red-600x600.jpg"
         />
       </div>
 
       <div className="home__row">
         <Product
           id="123456"
-          title="The learn Startup: How you like that"
-          price={11.96}
+          title="Apple iPhone 11, 128GB, Black - Fully Unlocked (Renewed)"
+          price={699.97}
           rating={5}
-          image="https://images-na.ssl-images-amazon.com/images/I/51Zymoq7UnL._SX325_801,204,203,200_.jpg"
+          image="https://m.media-amazon.com/images/I/51GUjMAFDbL._AC_UY218_.jpg"
+        />
+        <Product
+          id="123456"
+          title="Apple iPhone XS Max, 64GB, Silver - Fully Unlocked (Renewed)"
+          price={529.99}
+          rating={4}
+          image="https://m.media-amazon.com/images/I/61hBc3oHjyL._AC_UY218_.jpg"
+        />
+        <Product
+          id="123456"
+          title="Apple iPhone 11 Pro, 64GB, Space Gray - Fully Unlocked (Renewed)"
+          price={819.97}
+          rating={5}
+          image="https://m.media-amazon.com/images/I/41wDuEW9iZL._AC_UY218_.jpg"
+        />
+      </div>
+
+      <div className="home__row">
+        <Product
+          id="123456"
+          title="Apple iPhone 7, 128GB, Rose Gold - For AT&T / T-Mobile (Renewed)"
+          price={239.97}
+          rating={5}
+          image="https://m.media-amazon.com/images/I/61VwZLSaSOL._AC_UY218_.jpg"
         />
       </div>
 

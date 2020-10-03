@@ -18,7 +18,7 @@ function Checkout() {
           alt=""
         />
         {basket.length === 0 ? (
-          <div>
+          <div className="checkout__empty">
             <h2>Your Shopping Basket is empty</h2>
             <p>
               You have no items in your basket. To buy one or more items, click

@@ -1,0 +1,41 @@
+.footer {
+  background-color: #232f3e;
+  height: 300px;
+  padding-top: 50px;
+  margin-top: 50px;
+}
+.footer__nav {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.footer__title {
+  font-weight: 500;
+  margin-bottom: 10px;
+  color: white;
+}
+
+.footer__link {
+  font-weight: 100;
+  color: white;
+  margin-top: 5px;
+  text-decoration: none;
+}
+
+.footer__link:hover {
+  text-decoration-line: underline;
+}
+
+.footer__author {
+  display: flex;
+  justify-content: center;
+  padding-top: 50px;
+  color: white;
+}
+
+.footer__email {
+  display: flex;
+  justify-content: center;
+  font-weight: 100;
+  padding-top: 5px;
+}

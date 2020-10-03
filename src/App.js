@@ -6,13 +6,14 @@ import Header from "./components/header/Header";
 import Home from "./components/home/Home";
 import Checkout from "./components/checkout/Checkout";
 import Login from "./components/login/Login";
+import Footer from "./components/footer/Footer";
 import { useStateValue } from "./contextAPI/StatePovider";
 import { auth } from "./firebase";
 
 function App() {
   const [{ user }, dispatch] = useStateValue();
 
-  // useEffect <<<<<<<<<<<< POWERFUL 
+  // useEffect <<<<<<<<<<<< POWERFUL
   // Piece of code which runs based on a given condition
 
   useEffect(() => {
@@ -37,19 +38,19 @@ function App() {
     return () => {
       // Any cleanup operations in here...
       unsubscribe();
-    }
+    };
+  }, []);
 
-  }, [])
-
-  console.log("USER IS >>>", user)
+  console.log("USER IS >>>", user);
 
   return (
     <Router>
       <div className="App">
         <Switch>
           <Route path="/checkout">
-          <Header />
+            <Header />
             <Checkout />
+            <Footer />
           </Route>
           <Route path="/login">
             <Login />
@@ -57,6 +58,7 @@ function App() {
           <Route path="/">
             <Header />
             <Home />
+            <Footer />
           </Route>
         </Switch>
 
