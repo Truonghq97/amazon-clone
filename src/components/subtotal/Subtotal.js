@@ -7,9 +7,8 @@ import { useStateValue } from "../../contextAPI/StatePovider";
 import "./Subtotal.css";
 
 function Subtotal() {
-
   const history = useHistory();
-  const [{ basket }, dispatch] = useStateValue();
+  const [{ user, basket }] = useStateValue();
 
   return (
     <div className="subtotal">
@@ -32,7 +31,15 @@ function Subtotal() {
         thousandSeparator={true}
         prefix={"$"}
       />
-      <button onClick={e => history.push('/payment')}>Proceed to Checkout</button>
+      {!user ? (
+        <button onClick={(e) => history.push("/login")}>
+          Proceed to Checkout
+        </button>
+      ) : (
+        <button onClick={(e) => history.push("/payment")}>
+          Proceed to Checkout
+        </button>
+      )}
     </div>
   );
 }

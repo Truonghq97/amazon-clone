@@ -1,17 +1,17 @@
 import React from "react";
 
-import { useStateValue } from "../../contextAPI/StatePovider"
+import { useStateValue } from "../../contextAPI/StatePovider";
 
 import "./Product.css";
 
 function Product({ id, title, image, price, rating }) {
 
-  const [{}, dispatch ] = useStateValue();
+  const [{}, dispatch] = useStateValue();
 
   const addToBasket = () => {
     // Add items to basket...
     dispatch({
-      type: 'ADD_TO_BASKET',
+      type: "ADD_TO_BASKET",
       item: {
         id: id,
         title: title,
@@ -37,10 +37,9 @@ function Product({ id, title, image, price, rating }) {
               <p>&#11088;</p>
             ))}
         </div>
-        
       </div>
       <img src={image} alt="" />
-        <button onClick={addToBasket}>Add to basket</button>
+      <button onClick={addToBasket}>Add to basket</button>
     </div>
   );
 }

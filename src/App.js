@@ -7,6 +7,7 @@ import Home from "./components/home/Home";
 import Checkout from "./components/checkout/Checkout";
 import Payment from "./components/payment/Payment"
 import Login from "./components/login/Login";
+import Orders from "./components/orders/Orders";
 import Footer from "./components/footer/Footer";
 
 import { useStateValue } from "./contextAPI/StatePovider";
@@ -55,6 +56,11 @@ function App() {
     <Router>
       <div className="App">
         <Switch>
+        <Route path="/orders">
+            <Header />
+            <Orders />
+            <Footer />
+          </Route>
           <Route path="/checkout">
             <Header />
             <Checkout />

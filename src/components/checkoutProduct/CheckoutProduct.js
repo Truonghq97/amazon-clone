@@ -3,17 +3,16 @@ import React from "react";
 import { useStateValue } from "../../contextAPI/StatePovider";
 import "./CheckoutProduct.css";
 
-function CheckoutProduct({ id, title, image, price, rating }) {
+function CheckoutProduct({ id, title, image, price, rating, hideButton }) {
+  const [{ basket }, dispatch] = useStateValue();
 
-    const [{ basket }, dispatch] = useStateValue();
-
-    const removeFromBasket = () => {
-        // remove item from basket...
-        dispatch({
-            type: 'REMOVE_FROM_BASKET',
-            id: id,
-        })
-    }
+  const removeFromBasket = () => {
+    // remove item from basket...
+    dispatch({
+      type: "REMOVE_FROM_BASKET",
+      id: id,
+    });
+  };
 
   return (
     <div className="checkoutProduct">
@@ -34,8 +33,9 @@ function CheckoutProduct({ id, title, image, price, rating }) {
               <p>&#11088;</p>
             ))}
         </div>
-
-        <button onClick={removeFromBasket}>Remove item from basket</button>
+        {!hideButton && (
+          <button onClick={removeFromBasket}>Remove item from basket</button>
+        )}
       </div>
     </div>
   );
